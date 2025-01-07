@@ -1,62 +1,104 @@
-/* Reset and global styles */
+/* Resetting margins and ensuring consistency across elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif !important;
 }
 
-/* Navigation Bar Styles */
+/* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 1rem 2rem;
+  background-color: rgba(106, 153, 78, 0.9) !important; /* Light green */
 }
 
-.logo img {
-    max-height: 50px;
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+/* Logo image styles */
+.w-100.h-100.img-fluid.object-fit-cover.rounded-3 {
+  height: 85px;
+  width: 376px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+/* Navbar link text color */
+.nav-link, .dropdown-item {
+  color: rgb(47, 67, 78) !important; /* Charcoal */
 }
 
-.nav-links a:hover {
-    color: #f0a500;
-}
-
-.auth-links {
-    display: flex;
-    gap: 1rem;
-}
-
+/* Auth links (Login/Signup) */
 .auth-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  color: rgb(91, 130, 145) !important; /* Steel Teal */
 }
 
 .auth-links a:hover {
-    background-color: #f0a500;
-    color: #333;
+  color: rgb(47, 67, 78) !important; /* Charcoal */
 }
+
+/* Links on hover */
+.nav-link:hover, .dropdown-item:hover {
+  color: rgb(91, 130, 145) !important; /* Steel Teal */
+}
+
+/* Bootstrap Button Customization */
+.btn-primary {
+  --bs-btn-bg: rgb(56, 102, 65); /* Primary Color */
+  --bs-btn-border-color: rgb(56, 102, 65);
+  --bs-btn-color: #ffffff;
+}
+
+.btn-primary:hover {
+  --bs-btn-bg: rgb(56, 102, 65);
+  --bs-btn-border-color: rgb(56, 102, 65);
+  --bs-btn-color: #ffffff;
+}
+
+.btn-secondary {
+  --bs-btn-bg: rgb(106, 153, 78); /* Secondary Color */
+  --bs-btn-border-color: rgb(106, 153, 78);
+  --bs-btn-color: #ffffff;
+}
+
+/* Typography styles */
+.text-center.fw-bold {
+  font-size: 40px;
+}
+
+.text-steel-teal {
+  color: rgb(91, 130, 145) !important;
+}
+
+.text-charcoal {
+  color: rgb(47, 67, 78) !important;
+}
+
+.text-bright-gray {
+  color: rgb(235, 236, 238) !important;
+}
+
+.text-pale-blue {
+  color: rgb(152, 218, 216) !important;
+}
+
+.bg-light-green {
+  background-color: rgba(106, 153, 78, 0.9) !important; /* Light green */
+}
+
+.bg-light {
+  background-color: rgb(249, 251, 253) !important;
+}
+
+.bg-beige {
+  background-color: rgb(242, 232, 207) !important;
+}
+
+.bg-gray {
+  background-color: rgb(235, 236, 238) !important;
+}
+
