@@ -11,25 +11,16 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  background-color: rgba(106, 153, 78, 0.9) !important; /* Light green */
+  background-color: rgba(106, 153, 78, 0.9) !important; /* Ensure Light Green */
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
-  outline-color: initial;
-  outline-style: none;
-  outline-width: initial;
-}
-
-/* Logo image styles */
-.w-100.h-100.img-fluid.object-fit-cover.rounded-3 {
-  height: 85px;
-  width: 376px;
-}
-
-/* Navbar link text color */
-.nav-link, .dropdown-item {
+/* Ensuring the navbar links take proper color */
+.navbar .navbar-nav .nav-link {
   color: rgb(47, 67, 78) !important; /* Charcoal */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: rgb(91, 130, 145) !important; /* Steel Teal on hover */
 }
 
 /* Auth links (Login/Signup) */
@@ -39,11 +30,6 @@ body {
 
 .auth-links a:hover {
   color: rgb(47, 67, 78) !important; /* Charcoal */
-}
-
-/* Links on hover */
-.nav-link:hover, .dropdown-item:hover {
-  color: rgb(91, 130, 145) !important; /* Steel Teal */
 }
 
 /* Bootstrap Button Customization */
@@ -101,4 +87,5 @@ body {
 .bg-gray {
   background-color: rgb(235, 236, 238) !important;
 }
+
 
