@@ -3,71 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check-a-Pet</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Navigation Bar Example</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a class="logo" href="#">Check-a-Pet</a>
-            <ul class="navbar-menu">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#">Breeding</a></li>
                 <li><a href="#">Buying</a></li>
                 <li><a href="#">Vets</a></li>
                 <li><a href="#">Genetics</a></li>
             </ul>
-            <div class="navbar-search">
-                <input type="text" placeholder="Search something here...">
+          
+            <div class="search-container">
+                <input type="text" class="search-field" placeholder="Search...">
+                <button class="glossary-button">Glossary</button>
+                <div class="auth-links">
+                <a href="#" class="login-
+                <a href="#" class="login-link">Login</a>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Check-a-Pet...</h1>
-            <p>Find a healthy, happy new family member and a bright start to life!</p>
-        </div>
-    </section>
-
-    <!-- Image Section -->
-    <section class="image-section">
-        <img src="path_to_your_image.jpg" alt="Happy Pets" class="hero-image">
-    </section>
-
-    <!-- Main Content Section -->
-    <section class="content">
-        <div class="content-left">
-            <h2>The Consequences of Inbreeding and Extreme Breeding Practices</h2>
-            <p>Inbreeding in pets has led to an increase in inherited diseases. Breeding for extreme appearances often results in health issues that impact their quality of life.</p>
-
-            <h2>What is the Current Problem Check-a-Pet is Trying to Solve?</h2>
-            <p>Years of inbreeding and breeding for appearance have caused high rates of inherited diseases in purebred dogs. Breeding for extreme looks has led to painful conditions such as joint pain, breathing issues, and skin infections.</p>
-        </div>
-        <div class="content-right">
-            <h2>What Are the Issues?</h2>
-            <ul>
-                <li><strong>Genetic Health Risks:</strong> Some breeds suffer from severe genetic diseases.</li>
-                <li><strong>Breeding Challenges:</strong> Limited gene pools make breeding more complex and costly.</li>
-                <li><strong>Cost of Health Testing:</strong> While health tests are expensive, they prevent costly vet visits later.</li>
-                <li><strong>Outcrossing & Legal Responsibility:</strong> Breeders are legally responsible for the health of the dogs they breed.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Check-A-Pet. All rights reserved.</p>
-            <p><a href="#">Privacy & Policy</a> | <a href="#">Terms of Service</a></p>
-        </div>
-    </footer>
-
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Content goes here -->
+    </main>
 </body>
 </html>
+
 
 
 
